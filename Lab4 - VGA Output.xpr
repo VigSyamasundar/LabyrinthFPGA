@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.xpr">
+<Project Version="7" Minor="20" Path="H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="67cb7064f5a94222b8ba40cd282d7d82"/>
@@ -79,7 +79,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../Documents/Nexys4 _Master.xdc">
+      <File Path="$PPRDIR/Nexys4 _Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

@@ -30,8 +30,10 @@ module drawcon(
     output reg [3:0] draw_b
     );
 
-parameter xCells = 16;
-parameter yCells = 10;
+parameter xCells = 32;
+parameter yCells = 20;
+parameter cellWidth = 45,
+
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
 
@@ -59,8 +61,8 @@ end
 
 always @ *
 begin
-    currCellX = draw_x / 90;
-    currCellY = draw_y / 90;
+    currCellX = draw_x / cellWidth;
+    currCellY = draw_y / cellWidth;
     currCell = cells[currCellY][currCellX];
 
     /*if (currCell == 1)
@@ -91,9 +93,9 @@ begin
     if (currCell == 1)
     begin
         //Draw border
-        draw_r = 15;
-        draw_g = 10;
-        draw_b = 8;
+        draw_r = 8;
+        draw_g = 4;
+        draw_b = 1;
     end
     else
     begin

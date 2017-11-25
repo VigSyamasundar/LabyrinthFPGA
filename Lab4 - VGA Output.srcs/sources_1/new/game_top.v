@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-`define 
 //////////////////////////////////////////////////////////////////////////////////
 // Company:
 // Engineer:
@@ -23,9 +22,6 @@
 
 module game_top(
     input clk,
-    /*input [3:0] SW_R,
-    input [3:0] SW_G,
-    input [3:0] SW_B,*/
     input ctrBtn,
     input leftBtn,
     input rightBtn,
@@ -38,14 +34,6 @@ module game_top(
     output vsync
     );
 
-
-parameter xCells = 16;
-parameter yCells = 9;
-//TODO: Change the number of cases later
-wire [1:0] cells [yCells:0][xCells:0];
-
-
-wire currCell
 
 wire [10:0] curr_x;
 wire [9:0] curr_y;
@@ -68,29 +56,6 @@ drawcon draw_mod (.draw_r(tmpR), .draw_g(tmpG), .draw_b(tmpB), .draw_x(curr_x), 
 
 always @ (posedge frameclk)
 begin
-    /*Square 32x32
-    if (ctrBtn)
-    begin
-        blkpos_x = 715;
-        blkpos_y = 445;
-    end
-    if (leftBtn && (blkpos_x > 7))
-    begin
-        blkpos_x = blkpos_x - 1;
-    end
-    if (rightBtn && (blkpos_x < 1398))
-    begin
-        blkpos_x = blkpos_x + 1;
-    end
-    if (upBtn && (blkpos_y > 8))
-    begin
-        blkpos_y = blkpos_y - 1;
-    end
-    if (downBtn  && (blkpos_y < 859))
-    begin
-        blkpos_y = blkpos_y + 1;
-    end*/
-
 //  Circle Radius 15
     if (ctrBtn)
     begin

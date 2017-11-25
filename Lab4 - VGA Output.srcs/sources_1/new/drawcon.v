@@ -25,29 +25,26 @@ module drawcon(
     input [9:0] blkpos_y,
     input [10:0] draw_x,
     input [9:0] draw_y,
-    input []
-
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
     output reg [3:0] draw_b
     );
 
-reg [3:0] bg_r = 0;
-reg [3:0] bg_g = 0;
-reg [3:0] bg_b = 0;
-
-reg [3:0] blk_r = 0;
-reg [3:0] blk_g = 0;
-reg [3:0] blk_b = 0;
+parameter xCells = 16;
+parameter yCells = 9;
+//TODO: Change the number of cases later
+wire [1:0] cells [yCells:0][xCells:0];
 
 reg [3:0] currCellX;
 reg [3:0] currCellY;
 reg [1:0] currCell;
 
+
 always @ *
+begin
     currCellX = draw_x / 90;
     currCellY = draw_y / 90;
-    currCell = cells[currCellY][currCellX]
+    currCell = cells[currCellY][currCellX];
 
     if (currCell == 0)
     begin
@@ -75,7 +72,5 @@ always @ *
         draw_b = 0;
     end
 end
-
-
 
 endmodule

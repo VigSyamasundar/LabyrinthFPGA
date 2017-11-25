@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Sat Nov 25 21:47:52 2017
-# Process ID: 12892
+# Start of session at: Sat Nov 25 21:56:14 2017
+# Process ID: 12792
 # Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1
 # Command line: vivado.exe -log game_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source game_top.tcl -notrace
 # Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.vdi

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date             : Sat Nov 25 21:49:01 2017
+| Date             : Sat Nov 25 21:57:24 2017
 | Host             : A205-07 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.209  |
-| Dynamic (W)              | 0.112  |
+| Total On-Chip Power (W)  | 0.207  |
+| Dynamic (W)              | 0.110  |
 | Device Static (W)        | 0.097  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 84.0   |
-| Junction Temperature (C) | 26.0   |
+| Max Ambient (C)          | 84.1   |
+| Junction Temperature (C) | 25.9   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |      231 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      109 |     63400 |            0.17 |
+| Slice Logic    |    <0.001 |      229 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      108 |     63400 |            0.17 |
 |   CARRY4       |    <0.001 |       18 |     15850 |            0.11 |
 |   Register     |    <0.001 |       43 |    126800 |            0.03 |
 |   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |    <0.001 |      122 |       --- |             --- |
+| Signals        |    <0.001 |      123 |       --- |             --- |
 | MMCM           |     0.101 |        1 |         6 |           16.67 |
-| I/O            |     0.009 |       15 |       210 |            7.14 |
+| I/O            |     0.007 |       15 |       210 |            7.14 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.209 |          |           |                 |
+| Total          |     0.207 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -143,7 +143,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| game_top   |     0.112 |
+| game_top   |     0.110 |
 |   disp_clk |     0.101 |
 |     inst   |     0.101 |
 |   display  |     0.001 |

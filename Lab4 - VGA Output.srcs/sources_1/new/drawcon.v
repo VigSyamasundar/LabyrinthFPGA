@@ -41,7 +41,7 @@ reg [1:0] currCell;
 
 integer i;
 
-initial 
+initial
 begin
     for (i=0; i < 16; i = i+1)
     begin
@@ -63,7 +63,7 @@ begin
     currCellY = draw_y / 90;
     currCell = cells[currCellY][currCellX];
 
-    if (currCell == 1)
+    /*if (currCell == 1)
     begin
         //Draw border
         draw_r = 12;
@@ -87,7 +87,10 @@ begin
         draw_r = 0;
         draw_g = 0;
         draw_b = 0;
-    end
+    end*/
+    draw_r = currCellX;
+    draw_g = currCellX;
+    draw_b = currCellY;
 end
 
 endmodule

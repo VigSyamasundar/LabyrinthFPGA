@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1'
+HD_PWD='H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log game_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source game_top.tcl -notrace
 
 

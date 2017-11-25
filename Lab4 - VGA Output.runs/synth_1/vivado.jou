@@ -2,11 +2,11 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Sat Nov 25 19:11:50 2017
-# Process ID: 9628
-# Current directory: H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/synth_1
+# Start of session at: Sat Nov 25 21:08:23 2017
+# Process ID: 12788
+# Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1
 # Command line: vivado.exe -log game_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
-# Log file: H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/synth_1/game_top.vds
-# Journal file: H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/synth_1\vivado.jou
+# Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.vds
+# Journal file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source game_top.tcl -notrace

@@ -33,11 +33,28 @@ module drawcon(
 parameter xCells = 16;
 parameter yCells = 9;
 //TODO: Change the number of cases later
-wire [1:0] cells [yCells:0][xCells:0];
+reg [1:0] cells [yCells:0][xCells:0];
 
 reg [3:0] currCellX;
 reg [3:0] currCellY;
 reg [1:0] currCell;
+
+integer i;
+
+initial 
+begin
+    for (i=0; i < 16; i = i+1)
+    begin
+        cells[0][i] = 1;
+        cells[15][i] = 1;
+    end
+    for (i=0; i < 9; i = i+1)
+    begin
+        cells[0][i] = 1;
+        cells[8][i] = 1;
+    end
+
+end
 
 
 always @ *
@@ -46,7 +63,7 @@ begin
     currCellY = draw_y / 90;
     currCell = cells[currCellY][currCellX];
 
-    if (currCell == 0)
+    if (currCell == 1)
     begin
         //Draw border
         draw_r = 12;
@@ -57,11 +74,11 @@ begin
     begin
         //Draw Board
     end
-    else if (currCell == 1)
+    else if (currCell == 2)
     begin
         //Draw Hole
     end
-    else if (currCell == 2)
+    else if (currCell == 3)
     begin
         //Draw Target
     end

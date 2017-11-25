@@ -91,9 +91,9 @@ begin
     if (currCell == 1)
     begin
         //Draw border
-        draw_r = 12;
+        draw_r = 15;
         draw_g = 10;
-        draw_b = 3;
+        draw_b = 8;
     end
     else
     begin

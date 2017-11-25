@@ -31,7 +31,7 @@ module drawcon(
     );
 
 parameter xCells = 16;
-parameter yCells = 9;
+parameter yCells = 10;
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
 
@@ -43,15 +43,15 @@ integer i;
 
 initial
 begin
-    for (i=0; i < 9; i = i+1)
+    for (i=0; i < yCells; i = i+1)
     begin
         cells[i][0] = 1;
-        cells[i][15] = 1;
+        cells[i][xCells - 1] = 1;
     end
-    for (i=0; i < 16; i = i+1)
+    for (i=0; i < xCells; i = i+1)
     begin
         cells[0][i] = 1;
-        cells[8][i] = 1;
+        cells[yCells - 1][i] = 1;
     end
 
 end

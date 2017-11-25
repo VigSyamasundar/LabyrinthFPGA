@@ -25,6 +25,8 @@ module drawcon(
     input [9:0] blkpos_y,
     input [10:0] draw_x,
     input [9:0] draw_y,
+    input []
+
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
     output reg [3:0] draw_b
@@ -38,44 +40,42 @@ reg [3:0] blk_r = 0;
 reg [3:0] blk_g = 0;
 reg [3:0] blk_b = 0;
 
-/*always @ *
-begin
-//    if ((draw_x > blkpos_x) & (draw_x < blkpos_x+32) & (draw_y > blkpos_y) & (draw_y < blkpos_y+32))    Square 32x32
-    if (((draw_x - blkpos_x)**2 + (draw_y - blkpos_y)**2) <= 15**2)  // Circle Radius 15
-    begin
-        blk_r = 4'd15;
-        blk_g = 4'd0;
-        blk_b = 4'd0;
-    end
-    else
-    begin
-        blk_r = 4'd0;
-        blk_g = 4'd0;
-        blk_b = 4'd0;
-    end
-end*/
-
-/*always @ *
-
-    if ((draw_x < 8) | (draw_x > 1429) | (draw_y <9) | (draw_y > 890))
-    begin
-        bg_r = 4'd12;
-        bg_g = 4'd10;
-        bg_b = 4'd3;
-    end
-    else
-    begin
-        bg_r = 4'd0;
-        bg_g = 4'd0;
-        bg_b = 4'd0;
-    end
+reg [3:0] currCellX;
+reg [3:0] currCellY;
+reg [1:0] currCell;
 
 always @ *
-begin
-    draw_r = ((blk_r == 0) & (blk_g == 0) & (blk_b == 0))?bg_r:blk_r;
-    draw_g = ((blk_r == 0) & (blk_g == 0) & (blk_b == 0))?bg_g:blk_g;
-    draw_b = ((blk_r == 0) & (blk_g == 0) & (blk_b == 0))?bg_b:blk_b;
-end*/
+    currCellX = draw_x / 90;
+    currCellY = draw_y / 90;
+    currCell = cells[currCellY][currCellX]
+
+    if (currCell == 0)
+    begin
+        //Draw border
+        draw_r = 12;
+        draw_g = 10;
+        draw_b = 3;
+    end
+    else if (currCell == 0)
+    begin
+        //Draw Board
+    end
+    else if (currCell == 1)
+    begin
+        //Draw Hole
+    end
+    else if (currCell == 2)
+    begin
+        //Draw Target
+    end
+    else
+    begin
+        draw_r = 0;
+        draw_g = 0;
+        draw_b = 0;
+    end
+end
+
 
 
 endmodule

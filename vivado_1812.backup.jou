@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Nov 23 14:20:21 2017
+# Process ID: 1812
+# Current directory: H:/ES3B2/Lab4/Lab4 - VGA Output
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9056 H:\ES3B2\Lab4\Lab4 - VGA Output\Lab4 - VGA Output.xpr
+# Log file: H:/ES3B2/Lab4/Lab4 - VGA Output/vivado.log
+# Journal file: H:/ES3B2/Lab4/Lab4 - VGA Output\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.xpr}
+update_compile_order -fileset sources_1
+remove_files  -fileset clk_wiz_0 {{H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+file delete -force {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.ip_user_files/ip/clk_wiz_0} {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.ip_user_files/sim_scripts/clk_wiz_0}
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_0 -dir {h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip}
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {106.47} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {7} CONFIG.MMCM_CLKFBOUT_MULT_F {49.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.625} CONFIG.CLKOUT1_JITTER {410.504} CONFIG.CLKOUT1_PHASE_ERROR {473.931}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files {{h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files {{h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files {{h:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}] -directory {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.ip_user_files/sim_scripts} -ip_user_files_dir {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.ip_user_files} -ipstatic_source_dir {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.cache/compile_simlib/modelsim} {questa=H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.cache/compile_simlib/questa} {riviera=H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.cache/compile_simlib/riviera} {activehdl=H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse {{H:/Documents/Nexys4 _Master.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+add_files -fileset constrs_1 -norecurse H:/Documents/Nexys4DDR_Master.xdc
+reorder_files -fileset constrs_1 -after H:/Documents/Nexys4DDR_Master.xdc H:/Documents/Nexys4DDR_Master.xdc
+remove_files  -fileset constrs_1 H:/Documents/Nexys4DDR_Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/ES3B2/Lab4/Lab4 - VGA Output/Lab4 - VGA Output.runs/impl_1/vga_out.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

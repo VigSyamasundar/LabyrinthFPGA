@@ -32,7 +32,7 @@ module drawcon(
 
 parameter xCells = 32;
 parameter yCells = 20;
-parameter cellWidth = 45,
+parameter cellWidth = 45;
 
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];

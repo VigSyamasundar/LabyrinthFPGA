@@ -43,12 +43,12 @@ integer i;
 
 initial
 begin
-    for (i=0; i < 16; i = i+1)
-    begin
-        cells[0][i] = 1;
-        cells[15][i] = 1;
-    end
     for (i=0; i < 9; i = i+1)
+    begin
+        cells[i][0] = 1;
+        cells[i][15] = 1;
+    end
+    for (i=0; i < 16; i = i+1)
     begin
         cells[0][i] = 1;
         cells[8][i] = 1;

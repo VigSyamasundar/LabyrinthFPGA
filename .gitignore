@@ -39,3 +39,10 @@ impact_impact.xwbt
 
 Thumbs.db
 .DS_Store
+*.wdf
+*.xml
+*.rst
+*.pb
+*.dcp
+*.jou
+*.str

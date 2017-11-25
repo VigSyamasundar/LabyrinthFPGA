@@ -88,9 +88,19 @@ begin
         draw_g = 0;
         draw_b = 0;
     end*/
-    draw_r = currCellX;
-    draw_g = currCellX;
-    draw_b = currCellY;
+    if (currCell == 1)
+    begin
+        //Draw border
+        draw_r = 12;
+        draw_g = 10;
+        draw_b = 3;
+    end
+    else
+    begin
+        draw_r = 0;
+        draw_g = 0;
+        draw_b = 0;
+    end
 end
 
 endmodule

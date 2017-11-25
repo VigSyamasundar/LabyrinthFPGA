@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 17.11.2017 14:23:35
-// Design Name: 
+// Design Name:
 // Module Name: vga_out
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -46,7 +46,7 @@ always@(posedge clk)
     R_pix_r <= in_R;
     R_pix_g <= in_G;
     R_pix_b <= in_B;
-   
+
     if (hcount == 11'd1903)
         begin
         hcount <= 0;
@@ -62,17 +62,14 @@ always@(posedge clk)
        curr_x <= hcount - 11'd384;
        curr_y <= vcount - 10'd31;
        end
-    end 
-    
-    
+    end
 
-        
 assign hsync = (hcount > 151)? 1:0;
-assign vsync = (vcount >2)? 0:1; 
-assign frameclk = (vcount==0 | vcount ==482 )?1:0; 
+assign vsync = (vcount >2)? 0:1;
+assign frameclk = (vcount==0 | vcount ==482 )?1:0;
 
 assign pix_r = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_r:0;
 assign pix_g = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_g:0;
 assign pix_b = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_b:0;
-            
+
 endmodule

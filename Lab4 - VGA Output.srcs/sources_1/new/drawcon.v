@@ -37,7 +37,7 @@ reg [9:0] LHoleCenterY;
 reg [5:0] LCurrCellX;
 reg [4:0] LCurrCellY;
 reg [1:0] LCurrCell;
-reg drawGrids = 0;
+reg drawGrids = 1;
 
 initial
 begin

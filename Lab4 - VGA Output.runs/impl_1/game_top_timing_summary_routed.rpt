@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Thu Nov 30 21:51:18 2017
+| Date         : Thu Nov 30 22:22:46 2017
 | Host         : A205-30 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file game_top_timing_summary_routed.rpt -rpx game_top_timing_summary_routed.rpx
 | Design       : game_top

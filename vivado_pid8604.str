@@ -1,0 +1,2737 @@
+/*
+
+Vivado v2017.2.1 (64-bit)
+SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+
+Process ID: 8604
+License: Customer
+
+Current time: 	11/30/17 6:35:11 PM GMT
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 196 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/SIMULIA/Commands;C:/Program Files/Microsoft MPI/Bin/;C:/ProgramData/Oracle/Java/javapath;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Windows/CCM;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/;C:/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/DTS/Binn/;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/;C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/;C:/Program Files/IVI Foundation/VISA/Win64/Bin/;C:/Program Files/MATLAB/R2017b/runtime/win64;C:/Program Files/MATLAB/R2017b/bin;C:/Program Files (x86)/G95/bin;C:/Program Files (x86)/Skype/Phone/;C:/Program Files/Anaconda3;C:/Program Files/Anaconda3/Scripts;C:/Program Files/Anaconda3/Library/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	u1527115
+User home directory: C:/Users/u1527115
+User working directory: H:/ES3B2/LabyrinthFPGA
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/u1527115/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/u1527115/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/u1527115/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	H:/ES3B2/LabyrinthFPGA/.Xil/Vivado-8604-A205-30
+
+GUI allocated memory:	177 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 581 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: H:\ES3B2\LabyrinthFPGA\Lab4 - VGA Output.xpr. Version: Vivado v2017.2.1 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// [GUI Memory]: 41 MB (+40400kb) [00:00:04]
+// [Engine Memory]: 489 MB (+361114kb) [00:00:04]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr} 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+19959kb) [00:00:05]
+// [Engine Memory]: 529 MB (+16922kb) [00:00:06]
+// [GUI Memory]: 82 MB (+17856kb) [00:00:07]
+// [Engine Memory]: 569 MB (+13986kb) [00:00:07]
+// Tcl Message: open_project {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Project name: Lab4 - VGA Output; location: H:/ES3B2/LabyrinthFPGA; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 600 MB. GUI used memory: 43 MB. Current time: 11/30/17 6:35:12 PM GMT
+// [Engine Memory]: 600 MB (+1874kb) [00:00:09]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 4, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 4, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 50 seconds
+selectCodeEditor("drawcon.v", 602, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("drawcon.v", 30, 131); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 177, 389); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 30, 133); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 132, 241, false, false, false, true, false); // bI:J (JPanel:JComponent, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("drawcon.v", 61, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 80, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 136, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 88 MB (+1907kb) [00:02:12]
+selectCodeEditor("drawcon.v", 29, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 266, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 87, 458); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 73, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 90, 484); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 96, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 57, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 62, 291); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 54, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 60, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 55, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 82, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 106, 393); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 108, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 114, 480); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 82, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 56, 489); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 131, 488); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 635 MB (+5284kb) [00:02:55]
+// f:p (cg:JFrame): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// TclEventType: DG_GRAPH_GENERATED
+// 'cp' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 18:38:05 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 18:38:05 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 280, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 89, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("drawcon.v", 124, 131); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 74, 286); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 108, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 94, 286); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 36, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 36, 362); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 36, 362, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 36, 362); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 93 MB (+103kb) [00:03:51]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 135, 340); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 112, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 112, 214, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 85, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 85, 345, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 83, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 83, 361, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 133, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 133, 333, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 132, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 132, 364, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("drawcon.v", 138, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 138, 369, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 141, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 141, 399, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 149, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 149, 351, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 372, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 139, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 380, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 378, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 143, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 143, 411, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("drawcon.v", 141, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 166, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 127, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 127, 413, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 107, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 107, 371, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 104, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 104, 384, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 68, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 160, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 192, 458); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 129, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 118, 407); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 60, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 32, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 37, 173); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 28, 207); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 30 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, ah:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 100 MB (+3110kb) [00:06:01]
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bs:g (cg:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.2.1   **** Build date : Aug  9 2017-16:50:22     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// HMemoryUtils.trashcanNow. Engine heap size: 650 MB. GUI used memory: 53 MB. Current time: 11/30/17 6:41:12 PM GMT
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742915A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 800 MB (+140331kb) [00:06:10]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// [Engine Memory]: 851 MB (+11248kb) [00:06:13]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 18:41:23 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 18:41:23 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("drawcon.v", 88, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 27, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("drawcon.v", 25, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 25, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("drawcon.v", 104, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 80, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 99 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// 'cp' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 18:44:40 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 18:44:40 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 158 seconds
+selectCodeEditor("drawcon.v", 83, 206); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 237, 438); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 65 seconds
+selectCodeEditor("drawcon.v", 151, 393); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 106 MB (+487kb) [00:13:50]
+selectCodeEditor("drawcon.v", 133, 401); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 126, 401); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 237, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 14, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 186); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 209, 375); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("drawcon.v", 117, 153); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 141, 206); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 97, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 82, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 56, 148); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 94, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 89, 97); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 89, 97, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 55, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 78, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 81, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 81, 161, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 62, 109); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 40, 115); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 112, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 172, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 216, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 154, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 90, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 220, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 175, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 264, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("drawcon.v", 140, 321); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 197, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 140, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 138, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 140, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 420); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 140, 455); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 225, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 93 seconds
+selectCodeEditor("drawcon.v", 53, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 127, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 28, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 67, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 67, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("drawcon.v", 190, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 20, 321); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 9, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 119, 252); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 77, 132); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 59, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 32, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 79 seconds
+selectCodeEditor("drawcon.v", 28, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 203, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 168, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 72, 475); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 44, 483); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("drawcon.v", 28, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 270, 370); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 458); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 61, 204); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 53, 194); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 70, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 124 seconds
+selectCodeEditor("drawcon.v", 146, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Elapsed time: 94 seconds
+selectCodeEditor("drawcon.v", 121, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 111 MB (+22kb) [00:25:23]
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 156, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 169, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// Elapsed time: 159 seconds
+selectCodeEditor("drawcon.v", 537, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 555, 456); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 675, 427); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 120, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("drawcon.v", 172, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 131, 404); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 119, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 89, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 136, 434); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 283, 435); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// 'cp' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 19:04:37 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 19:04:37 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// [GUI Memory]: 117 MB (+603kb) [00:30:05]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 164 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs:g (cg:JFrame):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), display : vga_out (vga_out.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), display : vga_out (vga_out.v)]", 3, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("vga_out.v", 412, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("vga_out.v", 301, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("vga_out.v", 552, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 179, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 185, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// 'cp' command handler elapsed time: 42 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 19:09:38 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 19:09:38 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 862 MB. GUI used memory: 52 MB. Current time: 11/30/17 7:11:12 PM GMT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 179 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cg:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// bs:g (cg:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.2.1   **** Build date : Aug  9 2017-16:50:22     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742915A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("drawcon.v", 32, 209); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 96, 255); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 31, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 47, 339); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 5, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 201, 324); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 50, 461); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 77, 453); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 49, 454); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 47, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 556, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 19:13:51 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 19:13:51 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 141 seconds
+selectCodeEditor("drawcon.v", 65, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 607, 72); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 150, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 121, 78); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 134, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 157, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 663, 293); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 623, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 652, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 634, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 533, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 438, 359); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 121, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 664, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 607, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 495, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 538, 283); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 577, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 656, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HTimer (MainWindowUtils Timer) is taking too long to process. Increasing delay to 11000 ms.
+// Elapsed time: 102 seconds
+selectCodeEditor("drawcon.v", 197, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 141, 327); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 141, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 113, 97); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 75 seconds
+selectCodeEditor("drawcon.v", 109, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 156, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 39, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 82, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 29, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 230, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 29, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 45, 290); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 31, 234); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 128 seconds
+selectCodeEditor("drawcon.v", 26, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 29, 243); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("drawcon.v", 29, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 113, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 98, 481); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 100, 287); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 97, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 62, 460); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 64, 444); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 52, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("drawcon.v", 9, 35); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 27, 30); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 30 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("drawcon.v", 273, 24); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 69, 342); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 27, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ak:q)
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+selectCodeEditor("drawcon.v", 126, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 346, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x:aN (cg:JFrame): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// ak:q (cg:JFrame): Save Project: addNotify
+dismissDialog("Run Synthesis"); // x:aN (cg:JFrame)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Thu Nov 30 19:28:41 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 19:29:55 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// [GUI Memory]: 124 MB (+540kb) [00:55:27]
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Implementation Completed: addNotify
+// Elapsed time: 129 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Implementation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// HOptionPane Error: 'The file 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// HOptionPane Error: 'The file 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bz:aD)
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g:JCheckBox (JPanel:JComponent, f:p): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Nov 30 19:32:25 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+// Elapsed time: 11 seconds
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 92 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 39 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("drawcon.v", 116, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 149, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("drawcon.v", 710, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 695, 445); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 19:36:54 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 19:36:54 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 58 MB. Current time: 11/30/17 7:41:13 PM GMT
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 8000 ms.
+// Elapsed time: 1174 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 203 seconds
+selectCodeEditor("drawcon.v", 224, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 62, 109); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 55, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 113, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 60, 283); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 279, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 172, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("drawcon.v", 137, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 246, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("drawcon.v", 182, 434); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 206, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 876 MB. GUI used memory: 54 MB. Current time: 11/30/17 8:03:23 PM GMT
+// Elapsed time: 144 seconds
+selectCodeEditor("drawcon.v", 174, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 59, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 84, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 97, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 190, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 484, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 62, 243); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 61, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 65, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 56, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 24, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 52, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 67, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 75, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 186, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 186, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 28, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 228, 409); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:04:38 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:04:38 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 42, 91); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 79, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 78, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 43, 89); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 41, 96); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 101, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 184, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 64, 222); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 55, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 123, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 51, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 123, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 122, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 57, 226); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+selectCodeEditor("drawcon.v", 118, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 135, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset", true); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset"); // l:X (ax:e, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 32 seconds
+selectCodeEditor("drawcon.v", 111, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 302, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 90, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 14 seconds
+selectCodeEditor("drawcon.v", 17, 338); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 96, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 99 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 298 seconds
+selectCodeEditor("drawcon.v", 181, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 66 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 136, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 114 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Nov 30 20:16:26 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:16:26 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 142, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 163, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 76, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 197, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 82, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("drawcon.v", 194, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 96, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 171, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 196, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 321); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("drawcon.v", 57, 146); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 193, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 163, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah:x (cg:JFrame): Implementation Failed: addNotify
+dismissDialog("Implementation Failed"); // ah:x (cg:JFrame)
+selectCodeEditor("drawcon.v", 140, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 272, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 143, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 188, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 0, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 153, 325); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 90, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 131, 275); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 158, 322); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 157, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 112, 420); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 135, 438, false, false, false, true, false); // bI:J (JPanel:JComponent, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("drawcon.v", 115, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 144, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 44 seconds
+selectCodeEditor("drawcon.v", 56, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 130, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 101, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 107, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 71, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 164, 210); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 158, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 187, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 204, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 204, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 201, 252); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 171, 169); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 2, 92); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 28, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 28, 397, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 28, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:21:30 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:21:30 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 196, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 214, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 208, 229); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 195, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 248, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 277, 340); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 260, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 250, 436); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("drawcon.v", 148, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 138, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 137, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 194, 95); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 188, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 176, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 170, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 162, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 188, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 176, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 112, 316); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 98, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 94, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 118, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 120, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("drawcon.v", 121, 322); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 374); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 139, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("drawcon.v", 290, 186); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 306, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 288, 74); // n:bI (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 64 seconds
+selectCodeEditor("drawcon.v", 611, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 556, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 454, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 317, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 187, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 173, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("drawcon.v", 296, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 271, 204); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 269, 172); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 277, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 155, 111); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 155, 111, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 605, 191); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 580, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 348, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 107, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 196, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 353, 75); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 210, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 210, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 202, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 193, 176); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 274, 86); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 63, 112); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 241, 168); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 174, 224); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 179, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 411, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 396, 76); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 100, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 613, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 576, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 651, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 90, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("drawcon.v", 187, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 192, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 173, 185); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 617, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 671, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 629, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 502, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 402, 373); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 139, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 143, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 294, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:29:23 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:29:23 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 231, 190); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 130 MB (+157kb) [01:54:21]
+selectCodeEditor("drawcon.v", 194, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 219, 234); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 152, 148); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 151, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 153, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 236, 273); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 227, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 243, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 230, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 170, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 65 seconds
+selectCodeEditor("drawcon.v", 403, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 400, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 365, 234); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 351, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 285, 135); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 298, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 717, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 491, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 521, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 519, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 528, 258); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 519, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 548, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 36 seconds
+selectCodeEditor("drawcon.v", 243, 39); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 256, 324); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 202, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 109, 71); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 127, 288); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 116, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("drawcon.v", 89, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 78, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 80, 168); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 107, 115); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 98, 155); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 113, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 275); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 192, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 174, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 192, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 196, 141, false, false, false, true, false); // bI:J (JPanel:JComponent, cg:JFrame) - Popup Trigger
+selectCodeEditor("drawcon.v", 170, 120, false, false, false, true, false); // bI:J (JPanel:JComponent, cg:JFrame) - Popup Trigger
+selectCodeEditor("drawcon.v", 111, 105); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 138, 94); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 178, 133); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 158, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 153, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 157, 271); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 154, 302); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 164, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 168, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 199, 137); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 332, 55); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 293, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 276, 225); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 174, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 223, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("drawcon.v", 211, 135); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 173, 192); // bI:J (JPanel:JComponent, cg:JFrame)
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 892 MB. GUI used memory: 57 MB. Current time: 11/30/17 8:33:23 PM GMT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("drawcon.v", 344, 291); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 28, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 69, 321); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("drawcon.v", 160, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 442, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u:M (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cp' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:35:15 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:35:15 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 253, 259); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 240, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 178, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 209, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("drawcon.v", 409, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 223, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("drawcon.v", 154, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 158, 421, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 161, 421); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 236, 421); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 234, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 57, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 156, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 272, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 172 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("drawcon.v", 78, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 66, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 66, 372, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 66, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 66, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 63, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 63, 351, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 73, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 51, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 55, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("drawcon.v", 139, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 183, 67); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 172, 98); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 122, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 122, 316); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 136, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 136, 228, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 136, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 152, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 110, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 220, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 122, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 94, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 156, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 77, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 45, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 45, 282, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("drawcon.v", 178, 293); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 48, 102); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 48, 102, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("drawcon.v", 345, 132); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 121, 131); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 75, 86); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 52, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 52, 147, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 52, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 45, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 138, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 167, 316); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 143, 373); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 149, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 151, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cp' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:42:20 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:42:20 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 189, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 154, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 902 MB (+8857kb) [02:09:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 54 MB. Current time: 11/30/17 8:44:28 PM GMT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 310 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("drawcon.v", 180, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 159, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 182, 377); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("drawcon.v", 167, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 166, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 112, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 135, 412); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 357, 285); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 360, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 266, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:49:09 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:49:09 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 201, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 32, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 244, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 323, 190); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 147, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 58, 385); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HTimer (MainWindowUtils Timer) is taking too long to process. Increasing delay to 12000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 247 seconds
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("drawcon.v", 179, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 177, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 211, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 169, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 166, 153); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 173, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("drawcon.v", 104, 190); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 91, 204); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 201, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 91, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 79, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 20, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 178, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+selectCodeEditor("drawcon.v", 248, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:56:53 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:56:54 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 230, 85); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 94, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 197, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 201, 320); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 199, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Common 17-69] Command failed: Vivado Synthesis failed. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 255, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 214, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 146, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cg:JFrame): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cg:JFrame): FALSE
+selectCodeEditor("drawcon.v", 266, 366); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 251, 377); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 187, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 179, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("drawcon.v", 154, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 193, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 123, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 341); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 148, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 91); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 91, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 132, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 134, 308); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 344, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 105, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 100, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 124, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 52, 66); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("drawcon.v", 117, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 20:59:40 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 20:59:40 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 643, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 612, 224); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 570, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 322, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 328, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 330, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 458, 138); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 369, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 196 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 95 seconds
+selectCodeEditor("drawcon.v", 128, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 126, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 129, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 101, 47); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 493, 275); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// [GUI Memory]: 137 MB (+112kb) [02:30:05]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 21:05:21 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 21:05:21 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 59 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a:JButton (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.FilterToolBar_HIDE_ALL, "Hide All"); // a:JButton (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 136 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 156 seconds
+selectCodeEditor("drawcon.v", 434, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 293, 287); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 243, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 230, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 222, 406); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 222, 406, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 222, 406); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 217, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 152, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 144 MB (+274kb) [02:36:59]
+selectCodeEditor("drawcon.v", 113, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 114, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 114, 214, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 114, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 114, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("drawcon.v", 142, 100); // bI:J (JPanel:JComponent, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "<=", true); // l:X (ax:e, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "<="); // l:X (ax:e, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// 'cp' command handler elapsed time: 5 seconds
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 21:13:06 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 21:13:06 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 180, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 67 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true); // t:af (JViewport:JComponent, cg:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t:af (JViewport:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 59 MB. Current time: 11/30/17 9:14:29 PM GMT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 170 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("drawcon.v", 357, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 251, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("drawcon.v", 116, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 177, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 220, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 67 seconds
+selectCodeEditor("drawcon.v", 228, 97); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 221, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 120, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("drawcon.v", 81, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 51 seconds
+selectCodeEditor("drawcon.v", 186, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 216, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("drawcon.v", 91, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 76 seconds
+selectCodeEditor("drawcon.v", 132, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 148, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 166, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 126, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 69, 316); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 80, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 75, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 75, 319, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 75, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 113, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 98, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 89, 192); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 596, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 598, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 87, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 87, 191); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 600, 148); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 38 seconds
+selectCodeEditor("drawcon.v", 139, 212); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 219, 283); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 21:25:35 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 21:25:35 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 252 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 56 seconds
+selectCodeEditor("drawcon.v", 169, 30); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 169, 30, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 169, 30); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 169, 30); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 197, 93); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 167, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 192, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 108, 168); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 179, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 110, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 119, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 111, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 84, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 148, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 60, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 74, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 60, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 54, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cp' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 21:31:44 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 21:31:44 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 260 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 55 MB. Current time: 11/30/17 9:44:29 PM GMT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 557 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 5, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 5, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 100, 169); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 169, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 10, 452); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 44, 439); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("drawcon.v", 44, 439, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("drawcon.v", 267, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("drawcon.v", 189, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 922 MB. GUI used memory: 48 MB. Current time: 11/30/17 9:45:54 PM GMT
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("drawcon.v", 136, 302); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 115 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 4, false); // B:i (D:JPanel, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), draw_mod : drawcon (drawcon.v)]", 4, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("drawcon.v", 97, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 21:48:02 2017] Launched synth_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/runme.log [Thu Nov 30 21:48:02 2017] Launched impl_1... Run output will be captured here: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+selectCodeEditor("drawcon.v", 531, 389); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 209 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)

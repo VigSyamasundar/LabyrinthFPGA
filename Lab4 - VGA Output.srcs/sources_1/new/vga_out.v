@@ -3,6 +3,7 @@
 module vga_out(
     input clk,
     output frameclk,
+    output moveclk,
     input [3:0] in_R,
     input [3:0] in_G,
     input [3:0] in_B,
@@ -47,6 +48,7 @@ always@(posedge clk)
 assign hsync = (hcount > 151)? 1:0;
 assign vsync = (vcount >2)? 0:1;
 assign frameclk = (vcount==0 | vcount ==482 )?1:0;
+assign moveclk = (vcount==0 | vcount ==321 | vcount ==642)? 1:0;
 
 assign pix_r = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_r:0;
 assign pix_g = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_g:0;

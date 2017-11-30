@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Nov 30 13:28:19 2017
+# Process ID: 11104
+# Current directory: H:/ES3B2/LabyrinthFPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent176 H:\ES3B2\LabyrinthFPGA\Lab4 - VGA Output.xpr
+# Log file: H:/ES3B2/LabyrinthFPGA/vivado.log
+# Journal file: H:/ES3B2/LabyrinthFPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

@@ -9,32 +9,30 @@ module drawcon(
     input upBtn,
     input downBtn,
     input frameclk,
-    output reg  LEDTEST,
+    input moveclk,
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
     output reg [3:0] draw_b
     );
 
-reg [10:0] blkpos_x = 200;
-reg [9:0] blkpos_y = 200;
+reg signed [11:0] blkpos_x = 200;
+reg signed [10:0] blkpos_y = 200;
 parameter xCells = 32;
 parameter yCells = 20;
 parameter cellWidth = 45;
 parameter ballRad = 15;
 
-reg tmpClk = 0;
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
 reg [5:0] currCellX;
 reg [4:0] currCellY;
 reg [1:0] currCell;
-
+reg reset = 0;
 integer i;
 
 initial
 begin
 //border start
-    LEDTEST = 1;
     for (i=0; i < yCells; i = i+1)
     begin
         cells[i][0] = 1;
@@ -73,80 +71,106 @@ begin
 end
 
 
-always @ (posedge (frameclk | tmpClk))
+always @ (posedge frameclk )
 begin
-    if (ctrBtn)
+    if (ctrBtn || reset)
     begin
-        LEDTEST = ~LEDTEST;
         blkpos_x <= 200;
         blkpos_y <= 200;
+        reset = 0;
     end
+    else
+    begin
     if (leftBtn)
     begin
-        if (cells[blkpos_y/cellWidth][blkpos_x/cellWidth-1]!=1)
+        if (cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]!=1)
             blkpos_x <= blkpos_x - 1;
-        else if ((blkpos_x - ((blkpos_x/cellWidth)*cellWidth)) > ballRad)
+        else if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]==1) && ((blkpos_x - ((blkpos_x/cellWidth)*cellWidth)) > ballRad))
             blkpos_x <= blkpos_x - 1;
     end
+        
     if (rightBtn)
     begin
-        if (cells[blkpos_y/90][blkpos_x/cellWidth+1]!=1)    
+        if (cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]!=1)    
             blkpos_x <= blkpos_x + 1;
-        else if ((((blkpos_x/cellWidth + 1)*cellWidth) - blkpos_x) > ballRad)
-            blkpos_x <= blkpos_x + 1;
+        else if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]==1) && (((((blkpos_x/cellWidth) + 1)*cellWidth) - blkpos_x) > ballRad))
+            blkpos_x <= blkpos_x + 1; 
     end
+    
     if (upBtn)
     begin
-        if (cells[blkpos_y/cellWidth-1][blkpos_x/cellWidth]!=1)
+        if (cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]!=1)
             blkpos_y <= blkpos_y - 1;
-        else if ((blkpos_y - ((blkpos_y/cellWidth)*cellWidth)) > ballRad)
+        else if ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]==1) && ((blkpos_y - ((blkpos_y/cellWidth)*cellWidth)) > ballRad))
             blkpos_y <= blkpos_y - 1; 
     end
+    
     if (downBtn)
     begin
-        if (cells[blkpos_y/cellWidth+1][blkpos_x/cellWidth]!=1)
+        if (cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]!=1)
             blkpos_y <= blkpos_y + 1;
-        else if (((((blkpos_y/cellWidth) + 1)*cellWidth) - blkpos_y) > ballRad)
+        else if ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]==1) && (((((blkpos_y/cellWidth) + 1)*cellWidth) - blkpos_y) > ballRad))
             blkpos_y <= blkpos_y + 1;
     end
-
+    end
 end
 
 
+reg signed [11:0] holeCenterX;
+reg signed [10:0] holeCenterY;
+parameter holeRad = 20;
+
 always @ *
 begin
-    tmpClk = (draw_x == 0 && draw_y ==0)?1:0; 
     currCellX = draw_x / cellWidth;
     currCellY = draw_y / cellWidth;
     currCell = cells[currCellY][currCellX];
 
-if ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == draw_y)
+/*if ((moveclk) && ((currCell == 0) && draw_x % 5 == 0))
+begin
+    draw_r = 0;
+    draw_g = 0;
+    draw_b = 0;
+end
+
+
+else*/
+    if ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == draw_y)
     begin
-        draw_r = 14;
-                draw_g = 0;
-                draw_b = 0;
+        draw_r = 15;
+        draw_g = 15;
+        draw_b = 15;
     end
     else
     begin
     //Draw the ball
-    if (((draw_x - blkpos_x)**2 + (draw_y - blkpos_y)**2) <= ballRad ** 2)
-    begin
-        draw_r = 10;
-        draw_g = 10;
-        draw_b = 10;
-    end
+        if (((draw_x - blkpos_x)**2 + (draw_y - blkpos_y)**2) <= (ballRad) ** 2)
+        begin
+            if (((draw_x - blkpos_x)**2 + (draw_y - blkpos_y)**2) <= (ballRad-3) ** 2)
+            begin
+                draw_r = 15;
+                draw_g = 15;
+                draw_b = 15;
+            end
+            else
+            begin
+                draw_r = 10;
+                draw_g = 0;
+                draw_b = 0;
+            end
+        end
     else
     begin
         if (currCell == 0)
         begin
             //Draw Board
-            draw_r = 6;
-            draw_g = 11;
-            draw_b = 8;
+            draw_r = 0;
+            draw_g = 6;
+            draw_b = 0;
         end
         else if (currCell == 1)
         begin
-            //Draw border
+            //Draw wallls
             draw_r = 8;
             draw_g = 4;
             draw_b = 1;
@@ -154,9 +178,22 @@ if ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == dr
         else if (currCell == 2)
         begin
             //Draw Hole
-            draw_r = 0;
-            draw_g = 0;
-            draw_b = 0;
+            holeCenterX = ((currCellX * cellWidth)+((currCellX+1) * cellWidth))/2;
+            holeCenterY = ((currCellY * cellWidth)+((currCellY+1) * cellWidth))/2;
+            if (((draw_x - holeCenterX)**2 + (draw_y - holeCenterY)**2) > (holeRad**2))
+            begin
+                draw_r = 15;
+                draw_g = 15;
+                draw_b = 15;
+            end
+            else
+            begin
+                draw_r = 0;
+                draw_g = 0;
+                draw_b = 0;
+            end
+            if (((blkpos_x - holeCenterX)**2 <= (ballRad/2)**2) && ((blkpos_y - holeCenterY)**2 <= (ballRad/2)**2)) 
+                reset = 1;
         end
         else if (currCell == 3)
         begin
@@ -172,10 +209,18 @@ if ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == dr
             draw_b = 0;
         end
     end
-    end
-    
-    
-        
+    end 
 end
+
+//always @ *
+//begin
+//    if ((currCell == 2))
+//    begin
+//        /*if (blkpos_x < holeCenterX) xDiff = holeCenterX - blkpos_x
+//        else xDiff = blkpos_x - holeCenterX
+//        reset = 1;&*/
+//        if (((blkpos_x - holeCenterX)**2 <= (ballRad/2)**2) && ((blkpos_y - holeCenterY)**2 <= (ballRad/2)**2)) reset = 1;
+//    end
+//end
 
 endmodule
